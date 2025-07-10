@@ -3,6 +3,7 @@ using namespace std;
 typedef long long ll;
 const ll mod = 1e9 + 7;
 void prefisumAp(){
+    //(A[L] + A[L+1]*2 + A[L+2]*3 + A[L+3]*4...A[R]*(R-L+1)) 
     ll n, q;
     cin >> n >> q;
     vector<ll> a(n);
@@ -51,6 +52,7 @@ ll modpow(ll a, ll b) {
 }
 
 void prefsumGP(){
+   // (A[L] + A[L+1] * K + A[L+2] * K^2 + …. A[R] * K^(R-L))
     ll n, q, k;
     cin >> n >> q >> k;
     vector<ll> a(n);
